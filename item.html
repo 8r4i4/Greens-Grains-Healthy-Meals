@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Item Details — Greens & Grains</title>
+    <meta name="description" content="Item details, nutrition, coupon, and WhatsApp order." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html#hero" class="brand">Greens & Grains</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav" id="nav">
+          <a href="index.html#menu">Menu</a>
+          <a href="index.html#subscriptions">Subscriptions</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#map">Location</a>
+          <a href="index.html#about">About</a>
+        </nav>
+        <!-- Dark mode toggle using Uiverse-style switch -->
+        <div class="theme-toggle" title="Dark mode">
+          <label class="switch">
+            <input checked="true" id="checkbox" type="checkbox" />
+            <span class="slider">
+              <div class="star star_1"></div>
+              <div class="star star_2"></div>
+              <div class="star star_3"></div>
+              <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+                <path
+                  transform="matrix(.77976 0 0 .78395-299.99-418.63)"
+                  fill="#fff"
+                  d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                ></path>
+              </svg>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container item-layout">
+        <div class="item-gallery">
+          <img id="itemImage" src="assets/hero-healthy.svg" alt="Item image" />
+        </div>
+        <aside class="item-sidebar">
+          <h1 id="itemTitle">Item</h1>
+          <p id="itemDesc" class="muted">Delicious and balanced meal.</p>
+          <div class="item-meta">
+            <div class="price-row">
+              <span>Price:</span>
+              <strong id="itemPrice">DZD 0.00</strong>
+            </div>
+            <div class="nutrition">
+              <span id="itemCalories">— kcal</span>
+              <span id="itemCarbs">— carbs</span>
+              <span id="itemProtein">— protein</span>
+            </div>
+          </div>
+
+          <div class="controls">
+            <label class="qty-label" for="qty">Quantity</label>
+            <input id="qty" type="number" min="1" max="10" value="1" class="qty-input" />
+
+            <div class="coupon-row">
+              <input id="coupon" type="text" placeholder="Discount code (e.g., SAVE10)" />
+              <button id="applyCoupon" class="btn btn-outline">Apply</button>
+            </div>
+
+            <div class="total-row">
+              <span>Total:</span>
+              <strong id="totalPrice">DZD 0.00</strong>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a id="orderBtn" class="btn btn-primary" href="#">Order on WhatsApp</a>
+          </div>
+
+          <div class="fine-print muted">
+            <small>Tip: Try codes SAVE10, WELCOME5, or FIT15.</small>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <a id="whatsappFab" class="whatsapp-fab" href="#" aria-label="WhatsApp">🟢</a>
+  </body>
+</html>

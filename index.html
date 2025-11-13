@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Greens & Grains — Healthy Meals</title>
+      <meta name="description" content="Healthy meals, made simple. Fresh bowls, transparent ingredients, weekly plans, fast delivery." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Preload hero image for faster paint -->
+    <link rel="preload" as="image" href="https://commons.wikimedia.org/wiki/Special:FilePath/Greek%20Salad%20from%20Thessaloniki.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="brand">Greens & Grains</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav" id="nav">
+          <a href="#menu">Menu</a>
+          <a href="#subscriptions">Subscriptions</a>
+          <a href="#contact">Contact</a>
+          <a href="#map">Location</a>
+          <a href="#about">About</a>
+          <a href="#offers">Offers</a>
+        </nav>
+        <!-- Dark mode toggle using Uiverse-style switch -->
+        <div class="theme-toggle" title="Dark mode">
+          <label class="switch">
+            <input checked="true" id="checkbox" type="checkbox" />
+            <span class="slider">
+              <div class="star star_1"></div>
+              <div class="star star_2"></div>
+              <div class="star star_3"></div>
+              <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+                <path
+                  transform="matrix(.77976 0 0 .78395-299.99-418.63)"
+                  fill="#fff"
+                  d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                ></path>
+              </svg>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Healthy meals, made simple.</h1>
+            <p>Fresh bowls prepared daily. Transparent ingredients. Weekly plans that fit your lifestyle.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" id="orderWhatsApp" href="#">Order on WhatsApp</a>
+              <a class="btn btn-outline" href="#menu">See Menu</a>
+            </div>
+            <div class="hero-badges">
+              <span>Fresh Daily</span>
+              <span>Calories Listed</span>
+              <span>Fast Delivery</span>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img 
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Greek%20Salad%20from%20Thessaloniki.jpg"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+              referrerpolicy="no-referrer"
+              alt="Salad"
+              onerror="this.onerror=null; this.src='assets/hero-healthy.svg'"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features">
+        <div class="container grid-3">
+          <div class="feature-card">
+            <h3>Fresh Ingredients</h3>
+            <p>We prep every morning. Seasonal produce and whole grains only.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Transparent Nutrition</h3>
+            <p>Calories and macros listed for each item so you can plan easily.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Weekly Plans</h3>
+            <p>Flexible subscriptions: pause, swap, or skip anytime.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section id="menu" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Menu</h2>
+            <p>Balanced bowls, salads, and protein-packed meals.</p>
+          </div>
+          <div class="grid-3 menu-grid">
+            <article class="card">
+              <img 
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Food-salad-healthy-colorful_(24242433051).jpg"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="this.onerror=null; this.src='assets/quinoa.svg'"
+                alt="Quinoa Power Bowl"
+              />
+              <div class="card-body">
+                <h3>Quinoa Power Bowl</h3>
+                <p>Roasted veggies, chickpeas, tahini.</p>
+                <p>Carbs 65g • Protein 24g • 520 kcal</p>
+                <div class="card-footer">
+                  <span class="price">DZD 1400</span>
+        <a class="btn btn-sm" href="item.html?item=Quinoa%20Power%20Bowl" data-item="Quinoa Power Bowl">Order</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img 
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20Fillet%20Salad.JPG"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="this.onerror=null; this.src='assets/chicken.svg'"
+                alt="Chicken Protein Plate"
+              />
+              <div class="card-body">
+                <h3>Chicken Protein Plate</h3>
+                <p>Grilled chicken, brown rice, greens.</p>
+                <p>Carbs 55g • Protein 38g • 610 kcal</p>
+                <div class="card-footer">
+                  <span class="price">DZD 1600</span>
+        <a class="btn btn-sm" href="item.html?item=Chicken%20Protein%20Plate" data-item="Chicken Protein Plate">Order</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img 
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/GreekSalad2.JPG"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="this.onerror=null; this.src='assets/mediterranean.svg'"
+                alt="Mediterranean Salad"
+              />
+              <div class="card-body">
+                <h3>Mediterranean Salad</h3>
+                <p>Feta, olives, cucumbers, lemon vinaigrette.</p>
+                <p>Carbs 40g • Protein 16g • 430 kcal</p>
+                <div class="card-footer">
+                  <span class="price">DZD 1200</span>
+        <a class="btn btn-sm" href="item.html?item=Mediterranean%20Salad" data-item="Mediterranean Salad">Order</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img 
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Pr%C3%A9paration%20de%20green%20smoothie%20crudivore%20v%C3%A9g%C3%A9tal%20avec%20bol%20mixeur%20et%20pissenlis.jpg"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="this.onerror=null; this.src='assets/smoothie.svg'"
+                alt="Green Smoothie"
+              />
+              <div class="card-body">
+                <h3>Green Smoothie</h3>
+                <p>Spinach, banana, almond milk, chia.</p>
+                <p>Carbs 35g • Protein 8g • 290 kcal</p>
+                <div class="card-footer">
+                  <span class="price">DZD 600</span>
+        <a class="btn btn-sm" href="item.html?item=Green%20Smoothie" data-item="Green Smoothie">Order</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img 
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Salmon%20salad.jpeg"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="this.onerror=null; this.src='assets/salmon.svg'"
+                alt="Salmon Buddha Bowl"
+              />
+              <div class="card-body">
+                <h3>Salmon Buddha Bowl</h3>
+                <p>Wild salmon, quinoa, avocado, sesame.</p>
+                <p>Carbs 50g • Protein 36g • 650 kcal</p>
+                <div class="card-footer">
+                  <span class="price">DZD 2200</span>
+        <a class="btn btn-sm" href="item.html?item=Salmon%20Buddha%20Bowl" data-item="Salmon Buddha Bowl">Order</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img 
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Healthy%20Lentil%20Salad%20(Unsplash).jpg"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="this.onerror=null; this.src='assets/lentil.svg'"
+                alt="Vegan Lentil Bowl"
+              />
+              <div class="card-body">
+                <h3>Vegan Lentil Bowl</h3>
+                <p>Spiced lentils, roasted carrots, herbs.</p>
+                <p>Carbs 60g • Protein 22g • 540 kcal</p>
+                <div class="card-footer">
+                  <span class="price">DZD 1300</span>
+        <a class="btn btn-sm" href="item.html?item=Vegan%20Lentil%20Bowl" data-item="Vegan Lentil Bowl">Order</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subscriptions -->
+      <section id="subscriptions" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Weekly Subscriptions</h2>
+            <p>Pick a plan that matches your goals. Pause or swap anytime.</p>
+          </div>
+          <div class="grid-3 plans">
+            <div class="plan">
+              <h3>Light</h3>
+              <p class="price">DZD 6800/week</p>
+              <ul>
+                <li>5 meals (430–520 kcal)</li>
+                <li>Avg macros per meal: 45–60g carbs, 20–30g protein</li>
+                <li>Free delivery</li>
+                <li>1 smoothie</li>
+              </ul>
+              <a class="btn btn-primary btn-sm" href="#" data-plan="Light">Subscribe</a>
+            </div>
+            <div class="plan plan-featured">
+              <h3>Balance</h3>
+              <p class="price">DZD 12300/week</p>
+              <ul>
+                <li>8 meals (520–620 kcal)</li>
+                <li>Avg macros per meal: 50–70g carbs, 25–35g protein</li>
+                <li>Free delivery</li>
+                <li>3 smoothies</li>
+              </ul>
+              <a class="btn btn-primary btn-sm" href="#" data-plan="Balance">Subscribe</a>
+            </div>
+            <div class="plan">
+              <h3>Athlete</h3>
+              <p class="price">DZD 16900/week</p>
+              <ul>
+                <li>10 meals (620–750 kcal)</li>
+                <li>Avg macros per meal: 60–85g carbs, 30–45g protein</li>
+                <li>Priority delivery</li>
+                <li>5 smoothies</li>
+              </ul>
+              <a class="btn btn-primary btn-sm" href="#" data-plan="Athlete">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / CTA -->
+      <section id="contact" class="cta">
+        <div class="container cta-inner">
+          <div>
+            <h2>Order in seconds</h2>
+            <p>Tap WhatsApp to place an order or ask anything. We reply fast.</p>
+          </div>
+          <a class="btn btn-primary" id="ctaWhatsApp" href="#">WhatsApp Us</a>
+        </div>
+      </section>
+
+      <!-- Map -->
+      <section id="map" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Find us</h2>
+            <p>We’re open 10:00–22:00. Click the pin for directions.</p>
+          </div>
+          <div class="map-embed">
+            <iframe title="Map" src="https://www.google.com/maps?q=Constantine%2C%20Algeria&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section alt">
+        <div class="container testimonials">
+          <figure>
+            <blockquote>“Best healthy bowls in town. Tasty and guilt-free.”</blockquote>
+            <figcaption>— Sara M.</figcaption>
+          </figure>
+          <figure>
+            <blockquote>“Macros listed clearly, makes tracking easy.”</blockquote>
+            <figcaption>— Ali K.</figcaption>
+          </figure>
+          <figure>
+            <blockquote>“Weekly plan keeps me consistent without thinking.”</blockquote>
+            <figcaption>— David R.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container about">
+          <h2>About Greens & Grains</h2>
+          <p>We started with a simple promise: make healthy eating effortless. Every bowl is prepared fresh with seasonal produce and whole ingredients—no hidden stuff, ever.</p>
+        </div>
+      </section>
+
+      <!-- Offers: Current Promotions Images -->
+      <section id="offers" class="section section-offers" aria-labelledby="offers-title">
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Greens & Grains</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="Phone">Call</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a class="whatsapp-fab" id="whatsappFab" href="#" aria-label="WhatsApp order">💬</a>
+
+    <script src="app.js"></script>
+  </body>
+</html>

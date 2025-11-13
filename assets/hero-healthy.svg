@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="طبق صحي">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f9f4"/>
+      <stop offset="100%" stop-color="#e7f5ef"/>
+    </linearGradient>
+    <linearGradient id="bowlGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b0d6ff"/>
+      <stop offset="100%" stop-color="#8bbcf3"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="6"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.18"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="900" fill="url(#bg)"/>
+
+  <!-- Decorative waves -->
+  <path d="M0 160 C 240 100 360 220 600 160 C 840 100 960 220 1200 160 L 1200 0 L 0 0 Z" fill="#eaf7f1"/>
+  <path d="M0 780 C 240 840 360 720 600 780 C 840 840 960 720 1200 780 L 1200 900 L 0 900 Z" fill="#eaf4fb"/>
+
+  <!-- Bowl shadow -->
+  <ellipse cx="600" cy="660" rx="300" ry="28" fill="#cfe3d7" opacity="0.65"/>
+
+  <!-- Bowl rim -->
+  <ellipse cx="600" cy="580" rx="340" ry="70" fill="#dfeef8" stroke="#9ec3e8" stroke-width="6" filter="url(#softShadow)"/>
+
+  <!-- Bowl body -->
+  <path d="M260 580 C 310 740 890 740 940 580 C 930 600 880 620 820 632 C 750 646 675 654 600 656 C 525 654 450 646 380 632 C 320 620 270 600 260 580 Z" fill="url(#bowlGrad)" stroke="#6da4d9" stroke-width="6"/>
+
+  <!-- Greens (lettuce leaves) -->
+  <path d="M430 520 C 420 480 450 450 490 455 C 520 458 540 480 545 505 C 520 508 500 510 480 512 C 460 514 445 516 430 520 Z" fill="#7ccf8a" stroke="#4aa864" stroke-width="4"/>
+  <path d="M520 510 C 520 470 560 455 600 465 C 630 472 650 495 650 520 C 620 522 590 525 560 528 C 540 530 530 520 520 510 Z" fill="#89d79a" stroke="#53b173" stroke-width="4"/>
+  <path d="M680 515 C 675 480 705 455 740 460 C 770 465 790 490 790 515 C 760 518 730 520 705 522 C 695 523 688 519 680 515 Z" fill="#75c982" stroke="#4aa864" stroke-width="4"/>
+
+  <!-- Tomatoes -->
+  <circle cx="520" cy="550" r="22" fill="#f25c5c" stroke="#b93535" stroke-width="4"/>
+  <circle cx="700" cy="545" r="20" fill="#f25c5c" stroke="#b93535" stroke-width="4"/>
+
+  <!-- Cucumber slices -->
+  <circle cx="620" cy="540" r="18" fill="#b6e6b8" stroke="#74c37a" stroke-width="4"/>
+  <circle cx="575" cy="560" r="16" fill="#b6e6b8" stroke="#74c37a" stroke-width="4"/>
+
+  <!-- Carrot sticks -->
+  <rect x="460" y="540" width="16" height="50" rx="6" fill="#ffa15e" stroke="#d87535" stroke-width="4" transform="rotate(-12 460 540)"/>
+  <rect x="740" y="540" width="14" height="46" rx="6" fill="#ffa15e" stroke="#d87535" stroke-width="4" transform="rotate(8 740 540)"/>
+
+  <!-- Avocado slices -->
+  <path d="M635 515 C 650 505 670 505 685 515 C 695 520 700 535 690 545 C 675 560 650 560 640 545 C 632 533 625 522 635 515 Z" fill="#c6e7a0" stroke="#86c465" stroke-width="4"/>
+
+  <!-- Leaf accents -->
+  <path d="M480 500 C 490 490 510 485 520 490 C 505 505 495 510 480 515 Z" fill="#6bc77a"/>
+  <path d="M720 500 C 730 490 750 485 760 490 C 745 505 735 510 720 515 Z" fill="#6bc77a"/>
+
+  <!-- Title (optional, not visible if clipped by CSS) -->
+  <text x="600" y="240" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="52" fill="#6aa67f" opacity="0.65">طبق صحي</text>
+</svg>
