@@ -198,7 +198,7 @@ function initItemPage() {
   // Fallback if unknown item
   const name = item ? itemName : "Healthy Bowl";
   const base = item ? item.price : 1500;
-  const img = item ? item.image : "assets/hero-healthy.svg";
+  const img = item ? item.image : "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
   const desc = item ? item.desc : "Balanced bowl, fresh ingredients.";
   const calories = item ? item.calories : 520;
   const carbs = item ? item.carbs : 55;
@@ -210,7 +210,7 @@ function initItemPage() {
     imgEl.src = img;
     // Ensure external images load without referrer issues and have a safe fallback
     imgEl.referrerPolicy = "no-referrer";
-    imgEl.onerror = function() { this.onerror = null; this.src = "assets/hero-healthy.svg"; };
+    imgEl.onerror = function() { this.onerror = null; this.src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="; };
   }
   priceEl.textContent = fmt(base);
   kcalEl.textContent = `${calories} kcal`;
